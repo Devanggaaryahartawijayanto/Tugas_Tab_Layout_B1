@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Profile">
+
+    <ImageView
+        android:id="@+id/headerImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/illustration"
+        android:contentDescription="Header Image"
+        android:layout_gravity="center"/>
+
+    <!-- Profile TextView -->
+    <TextView
+        android:id="@+id/profileTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/montserrat_bold"/>
+
+    <!-- Container TextView Nama dan NIM -->
+    <LinearLayout
+        android:id="@+id/dataContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/form"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    <!-- TextView Nama -->
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: Arya"
+        android:textSize="18sp"
+        android:fontFamily="@font/montserrat_regular"/>
+
+    <!-- TextView NIM -->
+    <TextView
+        android:id="@+id/nimTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NIM: 520051"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat_regular"/>
+
+</LinearLayout>
+
+    </LinearLayout>

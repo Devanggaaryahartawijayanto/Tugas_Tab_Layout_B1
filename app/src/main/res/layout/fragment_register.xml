@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/illustration" />
+
+    <!-- Sign Up tittle -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <!-- EditText Nama -->
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="293dp"
+        android:layout_height="45dp"
+        android:hint="Name"
+        android:background="@drawable/form"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/montserrat_regular"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- EditText NIM -->
+    <EditText
+        android:id="@+id/nimEditText"
+        android:layout_width="293dp"
+        android:layout_height="45dp"
+        android:hint="NIM"
+        android:inputType="text"
+        android:background="@drawable/form"
+        android:fontFamily="@font/montserrat_regular"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/nameEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- EditText Email -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="293dp"
+        android:layout_height="45dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/form"
+        android:fontFamily="@font/montserrat_regular"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/nimEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- EditText Password -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="293dp"
+        android:layout_height="45dp"
+        android:background="@drawable/form"
+        android:hint="Password"
+        android:textSize="12sp"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/emailEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Button Register -->
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="296dp"
+        android:layout_height="45dp"
+        android:text="Register"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/passwordEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/montserrat_regular"
+        android:background="@drawable/btn_signup"
+        app:backgroundTint="@null"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="32dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
